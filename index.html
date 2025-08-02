@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaurav Bawankar - Portfolio & Services</title>
+    <meta name="description" content="Professional web development portfolio showcasing skills in Java, Python, DSA, and more">
+    <meta name="keywords" content="web development, portfolio, Gaurav Bawankar, developer, engineering, Yeshwantrao Chavan College of Engineering">
+    <meta name="author" content="Gaurav Bawankar">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gaurav Bawankar's Web Development Portfolio">
+    <meta property="og:description" content="Showcasing skills in software development and web technologies">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gaurav Bawankar's Web Portfolio">
+    <meta name="twitter:description" content="Passionate about building scalable web applications">
+    <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- External CSS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <a href="#home" class="logo-link">
+                        <span class="logo-text">Gaurav Bawankar</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-section="home">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-section="about">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-section="skills">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-section="contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-particles" id="particles"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hello, I'm</span>
+                            <span class="hero-name">Gaurav Bawankar</span>
+                            <span class="hero-profession"> Software Developer</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            I am currently pursuing my engineering degree from Yeshwantrao Chavan College of
+                            Engineering, Nagpur. I have a strong passion for technology and software development,
+                            with a solid foundation in both front-end and back-end technologies.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+
+                        <div class="hero-social">
+                            <a href="https://github.com/gaurav19mb" class="social-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gaurav-bawankar-338668286" class="social-link" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="hero-image-container">
+                    
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">
+                        Enthusiastic about building scalable web applications with a foundation in data structures and algorithms.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-info">
+                            <h3>I am a Creative Developer Currently in Nagpur</h3>
+                            <p>
+                                My technical skill set includes Java (proficient), DSA, Python, C, SQL, and MongoDB.
+                                I also know web development using technologies such as HTML, CSS, JavaScript, and bootstrap.
+                                I'm enthusiastic about building scalable web applications and constantly strive to improve
+                                my problem-solving abilities and development skills.
+                            </p>
+                        </div>
+
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <strong>Name:</strong>
+                                <span>Gaurav Bawankar</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Email:</strong>
+                                <span>gauravbawankar299@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Location:</strong>
+                                <span>Nagpur, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Freelance:</strong>
+                                <span class="available">Available</span>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="C:\Users\HP\Downloads\RESUME_GAURAV_BAWANKAR.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i>
+                                Hire Me
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <div class="about-image-container">
+                            <P>**********Gaurav Bawankar*********</P>
+                            <div class="about-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Data Structures & Algorithm</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL | MongoDB</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML | CSS | Javascript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-description">
+                        A showcase of my recent projects and creative solutions
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                    
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3 class="portfolio-title">Online Shopping Platform</h3>
+                                    <p class="portfolio-category">Web Development</p>
+                                    <div class="portfolio-links">
+                                        <a href="project-1.jpg" class="portfolio-link" data-lightbox="portfolio">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="https://example.com" class="portfolio-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Online Shopping Platform</h3>
+                            <p class="portfolio-description">A platform provides multiple product selection and adding them to cart where buyer get total amount</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                        
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3 class="portfolio-title">Weather Predictor Application</h3>
+                                    <p class="portfolio-category">Machine Learning </p>
+                                    <div class="portfolio-links">
+                                        <a href="project-2.jpg" class="portfolio-link" data-lightbox="portfolio">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="https://example.com" class="portfolio-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Weather Predictor Application</h3>
+                            <p class="portfolio-description">The platform which provides 1 week future weather in advance of particular location</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-description">
+                        Ready to start a project? Let's collaborate and create something amazing together.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>Opposite of YCCE,<br>Nagpur-441110<br>India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+91 9156719695</p>
+                                <p>Available Mon-Fri, 9AM-6PM IST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>gauravbawankar299@gmail.com</p>
+                                <p>Response within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-app">Mobile App Development</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message">Project Description *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please describe your project, requirements, and any specific features you need..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                    <span class="checkmark"></span>
+                                    Subscribe to my newsletter for updates
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Service</a> *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span class="btn-text">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </span>
+                                <span class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+
+                        <div class="form-status" id="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>Gaurav Bawankar</span>
+                    </div>
+                    <p class="footer-description">
+                        Enthusiastic web developer passionate about creating impactful digital solutions.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/gaurav19mb" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaurav-bawankar-338668286" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nagpur, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9156719695</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gauravbawankar299@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2025 Gaurav Bawankar. All rights reserved.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.xml">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- Additional Scripts -->
+    <script>
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remove preloader
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = 'none';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
